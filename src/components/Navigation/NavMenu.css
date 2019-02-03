@@ -1,0 +1,30 @@
+.navigation{
+    background: #282120;
+    color:  whitesmoke !important;
+    padding-left: 50px !important;
+    padding-right: 15px !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+
+}
+
+.navigation :hover{
+   text-decoration: none;
+   cursor: pointer;
+   color: rgb(200, 209, 33) !important;
+
+}
+.logo{
+    height: 50px;
+    width: auto
+}
+
+@media screen and (max-width:500px){
+    .company-name{
+        font-size: 16px !important;
+    }
+    .navigation{
+        padding-left: 40px !important;
+
+    }
+}

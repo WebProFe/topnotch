@@ -1,0 +1,21 @@
+.hero{
+    width: 100%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.358), rgba(0, 0, 0, 0.208) ), url("../../../images/construction1.png");
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.hero h1, p {
+    text-align: center;
+}
+
+.hero p{
+    padding-bottom: 5%;
+}
