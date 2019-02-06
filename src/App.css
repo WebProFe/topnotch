@@ -16,15 +16,15 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  font-family: 'Montserrat', sans-serif;
+
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
-
-body {
-  line-height: 1; }
 
 ol, ul {
   list-style: none; }
@@ -41,11 +41,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif; }
-
 .fade-enter {
   opacity: 0;
   z-index: 1;
@@ -54,9 +49,6 @@ body {
 .fade-enter.fade-enter-active {
   opacity: 1;
   transition: opacity 700ms ease-in; }
-
-h1, p, a {
-  font-family: 'proxima-nova', sans-serif; }
 
 .para-md-width {
   max-width: 600px; }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import './CallToAction.css'
 
 const CallToAction = (props) => {
@@ -7,7 +8,7 @@ const CallToAction = (props) => {
         <Container fluid className="call-to-action">
                 <h2 className="content">{props.title}</h2>
                 <p>{props.info}</p>
-                <Button color="warning">{props.buttonTag}</Button>
+                <Link to="/contact"><Button color="warning" onClick>{props.buttonTag}</Button></Link>
         </Container>
   );
 };

@@ -9,7 +9,7 @@
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
 }
 
 .hero h1, p {
@@ -18,4 +18,9 @@
 
 .hero p{
     padding-bottom: 5%;
+}
+@media screen and (max-width:500px){
+    .hero h1 {
+         font-size:2.5em
+    }
 }

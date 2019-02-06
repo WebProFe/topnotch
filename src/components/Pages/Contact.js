@@ -5,7 +5,6 @@ import {Container, Row} from 'reactstrap';
 import Hero from '../Common/HeroSection/Hero'
 import CallToAction from '../Common/CallToAction/CallToAction';
 import ContactForm from '../ContactForm/ContactForm';
-
 library.add(faSearch);
 
 class Services extends Component {
@@ -20,7 +19,7 @@ class Services extends Component {
             />
         </Row>
         <Row>
-            <ContactForm /> 
+            <ContactForm />
         </Row>
         <Row>
             <CallToAction

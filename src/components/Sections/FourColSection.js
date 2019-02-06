@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Col, Row, Button } from 'reactstrap';
+import {Container, Col, Row} from 'reactstrap';
 import "./Sections.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -31,11 +31,6 @@ const FourCols = (props) =>{
                 <FontAwesomeIcon icon="cog" color="#282120" size="3x"/>
                 <h4>PROFESSIONAL NOTCH WORK</h4>
                 <p>Top Notch work. Satisfaction Guaranteed!!</p>
-            </Col>
-        </Row>
-        <Row className="col-button">
-            <Col>
-                <Button color="warning">Our Services</Button>
             </Col>
         </Row>
     </Container>
