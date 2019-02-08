@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import Lightbox from 'lightbox-react';
 import { Container } from 'reactstrap';
 import FramingImage from '../../../../images/slide1.png'
-import '../Modals.css'
+import '../Modals.css';
+import { framing2 } from '../../../../images';
   
 const images = [
-  FramingImage
+  FramingImage, framing2
 ];
  
 class Framing extends Component {
@@ -22,15 +23,15 @@ class Framing extends Component {
     const { photoIndex, isOpen } = this.state;
  
     return (
-      <Container fluid>
+      <Container fluid  className="modal-frame">
                 <h3 className="modal-title">Framing</h3>
-                <img
+                <div  className="modal-frame"><img
                     className="services-image" 
-                    src={FramingImage} 
+                    src={framing2} 
                     type="button" 
                     onClick={() => this.setState({ isOpen: true })} 
                     alt="Framing" 
-                />
+                /></div>
         {isOpen && (
           <Lightbox
             mainSrc={images[photoIndex]}

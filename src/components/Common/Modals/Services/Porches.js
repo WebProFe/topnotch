@@ -3,8 +3,9 @@ import Lightbox from 'lightbox-react';
 import { Container } from 'reactstrap';
 import PorsheImage from '../../../../images/slide3.png'
 import '../Modals.css'
+import { porche1, porche2, porche3 } from '../../../../images';
   
-const images = [PorsheImage];
+const images = [PorsheImage, porche1, porche2, porche3];
  
 class Framing extends Component {
   constructor(props) {
@@ -21,14 +22,16 @@ class Framing extends Component {
  
     return (
       <Container fluid>
-                <h3 className="modal-title">Porshes</h3>
-                <img
-                    className="services-image" 
-                    src={PorsheImage} 
-                    type="button" 
-                    onClick={() => this.setState({ isOpen: true })} 
-                    alt="Framing" 
-                />
+                <h3 className="modal-title">Porches</h3>
+                <div  className="modal-frame">
+                  <img
+                      className="services-image" 
+                      src={PorsheImage} 
+                      type="button" 
+                      onClick={() => this.setState({ isOpen: true })} 
+                      alt="Framing" 
+                  />
+                </div>
         {isOpen && (
           <Lightbox
             mainSrc={images[photoIndex]}

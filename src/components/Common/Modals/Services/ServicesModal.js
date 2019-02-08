@@ -6,6 +6,7 @@ import Decks from './Decks';
 import Cornice from './Cornice';
 import Renovations from './Renovations';
 import Porches from './Porches';
+import { tooSmall, tooBig } from '../../../../images'
   
 class Services extends Component {
  
@@ -13,8 +14,15 @@ class Services extends Component {
  
     return (
       <Container fluid>
-        <Row>
-          <h2 className="title">Services</h2>
+        <Row className="title">
+          <h2>Services</h2>
+          <p>No job is too small or too big for us, we offer the same Top Notch quality on all projects.</p>
+            <Col className="projects">
+                <img src={tooSmall} alt="project"/>
+            </Col >
+            <Col className="projects">
+                <img src={tooBig} alt="project"/>
+            </Col>
         </Row>
         <Row>
             <Col>

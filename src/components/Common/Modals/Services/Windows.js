@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Lightbox from 'lightbox-react';
 import { Container} from 'reactstrap';
-import WindowsImage from '../../../../images/windows1.png'
-import '../Modals.css'
+import WindowsImage from '../../../../images/windows.png'
+import '../Modals.css';
+import { windows1, windows2, windows3, windows4, windows5, windows6, windows7, windows8, windows9} from '../../../../images'
   
 const images = [
-  WindowsImage
+  WindowsImage, windows1, windows2, windows3, windows4, windows5, windows6, windows7, windows8, windows9
 ];
  
 class Framing extends Component {
@@ -24,13 +25,15 @@ class Framing extends Component {
     return (
       <Container fluid>
                 <h3 className="modal-title">Windows</h3>
-                <img
-                    className="services-image" 
-                    src={WindowsImage} 
-                    type="button" 
-                    onClick={() => this.setState({ isOpen: true })} 
-                    alt="Framing" 
-                />
+                <div  className="modal-frame">
+                  <img
+                      className="services-image" 
+                      src={windows9} 
+                      type="button" 
+                      onClick={() => this.setState({ isOpen: true })} 
+                      alt="Framing" 
+                  />
+                </div>
         {isOpen && (
           <Lightbox
             mainSrc={images[photoIndex]}

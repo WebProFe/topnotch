@@ -1,8 +1,25 @@
 .title{
+    padding: 40px 0px;
+    background: #F7F3F2;
     text-align: center;
+}
+.title h2 {
+    font-size: 40px;
     width: 100%;
-    padding-top: 40px;
 
+}
+
+.title p{
+    padding: 20px;
+    width: 100%;
+
+}
+.title img{
+    width: 80%;
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 3px 3px 10px rgb(94, 94, 94);
 }
 
 .modal-title{
@@ -24,4 +41,22 @@
     content: "Hello"
 }
 
+.modal-frame{
+    height: 30vh;
+}
+.modal-frame img{
+    height: 100%;
+}
+
+@media screen and (max-width:800px){
+    .modal-frame {
+         height: 25vh;
+    }
+}
+
+@media screen and (max-width:500px){
+    .modal-frame {
+         height: 20vh;
+    }
+}
 

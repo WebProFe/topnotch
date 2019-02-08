@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import Lightbox from 'lightbox-react';
 import { Container } from 'reactstrap';
-import CorniceImage from '../../../../images/cornice1.png'
+import CorniceImage from '../../../../images/cornice1.png';
+import CorniceImage4 from '../../../../images/cornice4.png';
+import CorniceImage3 from '../../../../images/cornice3.png';
+import CorniceImage2 from '../../../../images/cornice2.png';
+
 import '../Modals.css'
   
 const images = [
-  CorniceImage
+  CorniceImage, CorniceImage2, CorniceImage3, CorniceImage4
 ];
  
 class Framing extends Component {
@@ -24,13 +28,15 @@ class Framing extends Component {
     return (
       <Container fluid>
                 <h3 className="modal-title">Cornice</h3>
-                <img
-                    className="services-image" 
-                    src={CorniceImage} 
-                    type="button" 
-                    onClick={() => this.setState({ isOpen: true })} 
-                    alt="Framing" 
-                />
+                <div  className="modal-frame">
+                  <img
+                      className="services-image" 
+                      src={CorniceImage} 
+                      type="button" 
+                      onClick={() => this.setState({ isOpen: true })} 
+                      alt="Framing" 
+                  />
+                </div>
         {isOpen && (
           <Lightbox
             mainSrc={images[photoIndex]}
