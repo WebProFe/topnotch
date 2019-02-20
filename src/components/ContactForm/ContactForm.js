@@ -160,7 +160,7 @@ closeModal = () => {
   render() {
     const { first_name, last_name, email, phone, state, city, desc, nameError, lastNameError, phoneError, descError, emailError, modalIsOpen, resData } = this.state;
     return (
-      <Container fluid className="contact-form">
+      <Container fluid className="form-container">
         <h2>Request A Quote</h2>
         <Form className="form" id="contact-form" onSubmit={this.submitHandler}>
             <FormGroup>
