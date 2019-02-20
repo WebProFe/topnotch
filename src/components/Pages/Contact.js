@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import {Container, Row} from 'reactstrap';
 import Hero from '../Common/HeroSection/Hero'
 import ThankYou from '../Common/CallToAction/ThankYou';
 import ContactForm from '../ContactForm/ContactForm';
-library.add(faSearch);
+library.add(faSearch, faWindowClose);
 
 class Services extends Component {
     

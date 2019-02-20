@@ -1,3 +1,143 @@
-.contact{
-    padding: 5% 0px;
-}
+.contact-form {
+    text-align: left;
+    padding: 1em;
+    margin: 1em;
+    border-radius: .5em;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+
+  .contact-form h2{
+    text-align: center;
+    padding: 2%;
+  }
+  
+  .form {
+    padding: 1em;
+    width: 70%;
+    margin: auto
+    
+  }
+  
+  label {
+    display: flex;
+    font-weight: 600;
+  }
+
+  .button-container button{
+    margin: auto
+  }
+  .form button{
+    text-align: center;
+    background: rgb(193, 193, 45)
+  }
+
+  .form-error {
+    color: #ff735b;
+    margin: 5px 0 10px;
+   }
+  .form-error:last-of-type {
+    margin-bottom: 15px; 
+  }
+
+  .customStyles{
+    top: calc(75% + 27.5px);
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    width: 35%;
+    min-width: 250px;
+    height: 250px; 
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border-radius: 3px;
+    border: none;
+    position:absolute;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  /* .contactModal {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    width: 300px;
+    height: 200px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+   } */
+
+  .modalHeader-container {
+    color: #fff;
+    font-weight: bold;
+    background-color: #298ce9;
+    text-align: center;
+    height: 50px;
+   }
+  .modalHeader-container__text {
+    position: relative;
+    top: 12px;
+    left: 20px;
+   }
+
+  .close-icon{
+    float: right;
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 5px
+  } 
+  
+
+  .close-icon:hover {
+    color:#282120;
+  }
+  .modal-body {
+    display: block;
+    position: relative;
+    text-align: center;
+    border: none;
+   }
+  .modal-body__text {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.1em;
+    padding: 0 10px;
+    font-size: 30px
+   }
+
+  .customStyles .modal-button{
+    text-align: center; 
+    margin: 10px auto;
+    display: block;
+    text-decoration: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #fad02c;
+    transition: background-color 75ms;  
+   }
+
+  .customStyles .modal-button:hover {
+    background-color: #bfa129;
+    transition: background-color 200ms;
+    color: #fff;
+  } 
+  
+  
+  .co-title {
+    font-size: 1.5em;
+  }
+  
+  .App-intro {
+    font-size: large;
+  }
+
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }

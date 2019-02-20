@@ -32,7 +32,7 @@ export default class NavMenu extends React.Component {
           <NavbarBrand className="company-name" href="/"><img className="logo" src={logo} alt=""/></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto"  navbar>
+            <Nav className="ml-auto"  navbar onClick={this.toggle}>
               <NavItem>
                 <Link to="/"><NavLink className="navigation">Home</NavLink></Link>
               </NavItem>
