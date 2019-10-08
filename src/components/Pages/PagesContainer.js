@@ -24,7 +24,6 @@ class PagesContainer extends Component {
                   classNames= 'fade'
                 >
                 <Switch location={location} className="route-section">
-
                   <Route exact path="/" component={Home} />
                   <Route exact path="/services" component={Services} />
                   <Route exact path="/contact" component={Contact} />
