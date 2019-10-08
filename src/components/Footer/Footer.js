@@ -8,7 +8,7 @@ const Footer = (props) =>{
     <Container fluid className="footer">
         <Row className="footer-top">
                 <div className="copyright">
-                    <p>Copyright © 2019 Top Notch Corp <span className="footer__list__pipe">||</span> Designed By <span><a href="https://www.ipqtech.com" target="_blank" rel="extnoopener noreferrerernal">IPQ Technologies</a></span> </p>
+                    <p>Copyright © 2019 Top Notch Corp <span className="footer__list__pipe">||</span> Designed By <span><a href="https://www.ipqtech.com" target="_blank" rel="noopener noreferrer">IPQ Technologies</a></span> </p>
                 </div>
         </Row>
         <Row className="footer-bottom">

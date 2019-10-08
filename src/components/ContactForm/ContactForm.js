@@ -158,7 +158,7 @@ closeModal = () => {
 
 
   render() {
-    const { first_name, last_name, email, phone, state, city, desc, nameError, lastNameError, phoneError, descError, emailError, modalIsOpen, resData } = this.state;
+    const { first_name, last_name, email, phone, state, city, desc, nameError, lastNameError, phoneError, descError, emailError, modalIsOpen } = this.state;
     return (
       <Container fluid className="form-container">
         <h2>Request A Quote</h2>
